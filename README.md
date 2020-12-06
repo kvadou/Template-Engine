@@ -6,7 +6,7 @@ This is a node CLI that prompts a user to input data about their software engine
 
 Below is the gif showing the functionality of the application:
 
-![DPK Template Engineer Generator](./src/readme_gif.gif)
+![DPK Template Engineer Generator](./src/te.gif)
 
 The full movie file showing functionality of the application can be found [here](./src/readme_movie.mp4)
 
