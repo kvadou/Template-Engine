@@ -11,6 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 let teamList = [];
+// adding manager questions
 const managerQuestions = [
   {
     type: "input",
@@ -53,6 +54,7 @@ const managerQuestions = [
   },
 ];
 
+// adding employee questions
 const employeeQuestions = [
   {
     type: "input",
@@ -117,6 +119,36 @@ const employeeQuestions = [
     choices: ["Yes", "No"],
   },
 ];
+
+// build team function
+
+function buildTeamList() {
+  inquire.prompt(employeeQuestions).then((employeeInfo) => {
+    if (employeeInfo.role == "engineer") {
+      var newMember = new Engineer(
+        employeeInfo.name,
+        teamList.length + 1,
+        employeeInfo.email,
+        employeeInfo.github
+      );
+    } else {
+      var newMember = new Intern(
+        employeeInfo.name,
+        teamList.length + 1,
+        employeeInfo.email,
+        employeeInfo.school
+      );
+    }
+    teamList.push(newMember);
+    if (employeeInfo.addAnother === "Yes") {
+      console.log(" ");
+      buildTeamList();
+    } else {
+      buildHtmlPage();
+    }
+  });
+}
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
