@@ -25,11 +25,14 @@ The full movie file showing functionality of the application can be found [here]
 
 `npm install inquirer`
 
+`npm install jest`
+
+
 ## Usage
 
 Run the following command at the root of your project and answer the prompted questions:
 
-`node index.js`
+`node app.js`
 
 ## Contributing
 
