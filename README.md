@@ -2,11 +2,11 @@
 
 ## Description
 
-This is a node.js application that collects user input from the command line via inquirer to populate a README.md file for user repository. The README.md file is created in the dist directory. [here](https://github.com/kvadou/README/blob/main/distr/README.md)
+This is a node CLI that prompts a user to input data about their software engineering team and will output an HTML webpage that displays a summary of each person on the team.  The application collects information from the user via inquirer and was tested using jest.
 
 Below is the gif showing the functionality of the application:
 
-![DPK README Generator](./src/readme_gif.gif)
+![DPK Template Engineer Generator](./src/readme_gif.gif)
 
 The full movie file showing functionality of the application can be found [here](./src/readme_movie.mp4)
 
