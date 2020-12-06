@@ -8,7 +8,7 @@ Below is the gif showing the functionality of the application:
 
 ![DPK Template Engineer Generator](./src/te.gif)
 
-The full movie file showing functionality of the application can be found [here](./src/readme_movie.mp4)
+The full movie file showing functionality of the application can be found [here](./src/te.mp4)
 
 ## Table of Contents
 
