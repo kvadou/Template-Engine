@@ -195,6 +195,22 @@ function buildHtmlPage() {
   console.log("Page tags closed! Operation completed.");
 }
 
+// html card build
+function buildHtmlCard(memberType, name, id, email, propertyValue) {
+  let data = fs.readFileSync(`./templates/${memberType}.html`, "utf8");
+  data = data.replace("nameHere", name);
+  data = data.replace("idHere", `ID: ${id}`);
+  data = data.replace(
+    "emailHere",
+    `Email: <a href="mailto:${email}">${email}</a>`
+  );
+  data = data.replace("propertyHere", propertyValue);
+  fs.appendFileSync("./output/teamPage.html", data, (err) => {
+    if (err) throw err;
+  });
+  console.log("Card appended");
+}
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
