@@ -211,6 +211,27 @@ function buildHtmlCard(memberType, name, id, email, propertyValue) {
   console.log("Card appended");
 }
 
+// init function
+function init() {
+  inquire.prompt(managerQuestions).then((managerInfo) => {
+    let teamManager = new Manager(
+      managerInfo.name,
+      1,
+      managerInfo.email,
+      managerInfo.officeNum
+    );
+    teamList.push(teamManager);
+    console.log(" ");
+    if (managerInfo.hasTeam === "Yes") {
+      buildTeamList();
+    } else {
+      buildHtmlPage();
+    }
+  });
+}
+
+init();
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
