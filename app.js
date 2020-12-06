@@ -161,7 +161,7 @@ function buildHtmlPage() {
         member.getName(),
         member.getId(),
         member.getEmail(),
-        "Office: " + member.getOfficeNumber()
+        "Office number: " + member.getOfficeNumber()
       );
     } else if (member.getRole() == "Engineer") {
       buildHtmlCard(
