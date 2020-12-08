@@ -10,6 +10,10 @@ Below is the gif showing the functionality of the application:
 
 The full movie file showing functionality of the application can be found [here](./src/te.mp4)
 
+Screenshot of the completed output:
+
+![DPK completed output](./src/sample.png)
+
 ## Table of Contents
 
 - [Description](#description)
