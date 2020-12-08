@@ -30,9 +30,13 @@ The full movie file showing functionality of the application can be found [here]
 
 ## Usage
 
-Run the following command at the root of your project and answer the prompted questions:
+Run the following command at the root of your project and you will be prompted with questions:
 
 `node app.js`
+
+Run the following command at the root of your project and you will get the results of the tests:
+
+`npm run test`
 
 ## Contributing
 
