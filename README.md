@@ -12,13 +12,13 @@
 
 This is a node CLI that prompts a user to input data about their software engineering team and will output an HTML webpage that displays a summary of each person on the team.  The application collects information from the user via inquirer and was tested using jest.
 
-#Gif showing the functionality of the application:
+##Gif showing the functionality of the application:
 
 ![DPK Template Engineer Generator](./src/te.gif)
 
 The full movie file showing functionality of the application can be found [here](./src/te.mp4)
 
-#Screenshot of the completed output:
+##Screenshot of the completed output:
 
 ![DPK completed output](./src/sample.png)
 
