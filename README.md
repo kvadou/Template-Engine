@@ -10,7 +10,9 @@
 
 ## Description
 
-This is a node CLI that prompts a user to input data about their software engineering team and will output an HTML webpage that displays a summary of each person on the team.  The application collects information from the user via inquirer and was tested using jest.
+This is a node CLI that prompts a user to input data about their software engineering team and will output an HTML webpage that displays a summary of each person on the team.  The application collects information from the user via inquirer and was tested using jest.  I used test-driven development to ensure all new code commited would pass each of the 17 tests that were provided for this project.
+
+The completed teamPage.html can be found in the output folder.
 
 Gif showing the functionality of the application:
 
